@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <style>
+    .attribution {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: rgb(255, 0, 0);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="section1">
+        <div class="section1boxes">
+          <div><span>Day</span>
+            <input class="dayenter" type="text" id="days" placeholder="DD">
+          </div>
+          <div><span>Month</span>
+            <input class="dayenter" type="text" id="month" placeholder="MM">
+          </div>
+          <div><span>Year</span>
+            <input class="dayenter" type="text" id="year" placeholder="YYYY">
+          </div>
+        </div>
+        <div style="display: flex; gap: 15px;">
+          <div style="border: 1px solid rgb(189, 189, 189); width: 80%;" class="bottomline"></div><span
+            id="calculateage">Cal.</span>
+        </div>
+      </div>
+
+      <div class="section2">
+        <div class="display">
+          <div class="y">
+            <span class="purple" id="set_years">--</span><span id="calculated">years</span>
+          </div>
+          <div class="m">
+            <span class="purple" id="set_months">--</span><span id="calculated">months</span>
+          </div>
+          <div class="d">
+            <span class="purple" id="set_days">--</span><span id="calculated">days</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <div style="position: absolute;
+    bottom: 0; right: 0; padding: 10px;" class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://mudasar.netlify.app">Mudassar</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
