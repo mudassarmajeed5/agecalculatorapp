@@ -1,19 +1,16 @@
 function Date_of_Birth() {
-    let year = document.getElementById("year").value;
-    let month = document.getElementById("month").value;
-    let days = document.getElementById("days").value;
-
     document.getElementById("calculateage").addEventListener("click", () => {
-        if (days == '') {
+        let year = document.getElementById("year").value;
+        let month = document.getElementById("month").value;
+        let days = document.getElementById("days").value;
+
+        if (days === '') {
             alert("Enter a date");
-        }
-        else if (month == '') {
+        } else if (month === '') {
             alert("Enter Month");
-        }
-        else if (year >= 2024 || year === '') {
+        } else if (year >= 2024 || year === '') {
             alert("Please enter a recent date");
-        }
-        else {
+        } else {
             let birthdate = new Date(year, month - 1, days);
             console.log(birthdate);
             let currentDate = new Date();
